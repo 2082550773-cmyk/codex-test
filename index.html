@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Two Hairs / Liquid Bridge</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="page">
+      <header class="titlebar">
+        <p>OBSERVATION NOTE 01</p>
+        <p>AI × EDUCATION / EXPERIMENT</p>
+      </header>
+
+      <section class="canvas-wrap" aria-label="Animated research sketch of liquid transfer between two hairs">
+        <svg id="sketch" viewBox="0 0 1200 760" role="img" aria-labelledby="scene-title scene-description">
+          <title id="scene-title">Two hairs and a liquid bridge</title>
+          <desc id="scene-description">A hand-drawn study that shifts attention from two hairs, to their gap, to liquid bridging the gap, and finally to liquid on a substrate.</desc>
+          <defs>
+            <filter id="paper-grain"><feTurbulence type="fractalNoise" baseFrequency=".75" numOctaves="3" stitchTiles="stitch"/><feColorMatrix type="saturate" values="0"/><feComponentTransfer><feFuncA type="table" tableValues="0 .075"/></feComponentTransfer></filter>
+          </defs>
+          <rect class="paper" width="1200" height="760" rx="3" />
+          <rect class="grain" width="1200" height="760" filter="url(#paper-grain)" />
+
+          <g id="underlines" class="ink soft"></g>
+          <g id="hairs" class="ink"></g>
+          <g id="gap-guide" class="ink soft"></g>
+          <g id="liquid" class="liquid"></g>
+          <g id="substrate" class="ink"></g>
+          <g id="attention" class="ink"></g>
+          <g id="annotations" class="ink"></g>
+          <g id="caption" class="ink"></g>
+        </svg>
+      </section>
+
+      <footer>
+        <span id="stage-label">01 / TWO HAIRS</span>
+        <span>15 SEC LOOP</span>
+      </footer>
+    </main>
+    <script src="config.js"></script>
+    <script src="timeline.js"></script>
+  </body>
+</html>
