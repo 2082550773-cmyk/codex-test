@@ -1,0 +1,18 @@
+:root { color-scheme: light; }
+* { box-sizing: border-box; }
+body { margin: 0; min-width: 320px; background: #d8cdb9; color: #231f1a; font-family: "Courier New", Courier, monospace; }
+.page { width: min(1120px, calc(100vw - 32px)); margin: 0 auto; padding: 22px 0 28px; }
+.titlebar, footer { display: flex; justify-content: space-between; gap: 16px; font-size: 11px; letter-spacing: .08em; color: #5d5448; }
+.titlebar { margin: 0 5px 13px; } .titlebar p { margin: 0; }
+.canvas-wrap { box-shadow: 0 14px 34px rgba(64, 47, 26, .19); background: #f2ead9; }
+svg { display: block; width: 100%; height: auto; }
+footer { padding: 13px 5px 0; } footer span:first-child { color: #27211a; font-weight: bold; }
+.paper { fill: #f1e7d2; } .grain { opacity: .58; mix-blend-mode: multiply; }
+.ink { fill: none; stroke: #252019; stroke-width: 3.2; stroke-linecap: round; stroke-linejoin: round; }
+.ink.soft { stroke-width: 2; opacity: .55; }
+.liquid { fill: #7a9d99; stroke: #252019; stroke-width: 2.5; stroke-linejoin: round; }
+.annotation-text { fill: #30291f; stroke: none; font-size: 20px; letter-spacing: .025em; }
+.annotation-small { fill: #635a4d; stroke: none; font-size: 15px; }
+.caption { fill: #30291f; stroke: none; font-size: 25px; letter-spacing: .04em; }
+.draw { stroke-dasharray: var(--length, 900); stroke-dashoffset: var(--length, 900); }
+@media (max-width: 640px) { .page { width: calc(100vw - 18px); padding-top: 12px; } .titlebar, footer { font-size: 9px; } }
