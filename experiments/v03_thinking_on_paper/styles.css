@@ -1,0 +1,19 @@
+:root { color-scheme: light; --paper: #f3eddb; --ink: #2d2b25; --quiet-ink: #756f62; --liquid: #73aeb7; --attention: #548d95; --outer-paper: #ded4bf; }
+* { box-sizing: border-box; }
+body { margin: 0; min-width: 320px; background: var(--outer-paper); color: var(--ink); font-family: "Courier New", Courier, monospace; }
+.prototype { width: min(1500px, calc(100vw - 48px)); margin: 0 auto; padding: 34px 0 25px; }
+.drawing-sheet { background: var(--paper); border: 1px solid rgba(45,43,37,.43); box-shadow: 0 16px 34px rgba(66,54,36,.15); }
+svg { display: block; width: 100%; height: auto; } #paper { fill: var(--paper); }
+.hair { fill: var(--ink); stroke: var(--ink); stroke-width: 1.4; stroke-linejoin: round; }
+.hair-mark { fill: none; stroke: var(--quiet-ink); stroke-width: 1.1; stroke-linecap: round; opacity: .48; }
+.surface { fill: none; stroke: var(--ink); stroke-width: 2.15; stroke-linecap: round; }
+.surface-echo { fill: none; stroke: var(--quiet-ink); stroke-width: 1; stroke-linecap: round; opacity: .43; }
+.attention { fill: none; stroke: var(--attention); stroke-width: 2.6; stroke-linecap: round; stroke-linejoin: round; }
+.liquid { fill: var(--liquid); stroke: var(--ink); stroke-width: 1.55; stroke-linejoin: round; }
+.liquid-edge { fill: none; stroke: var(--attention); stroke-width: 1.25; stroke-linecap: round; opacity: .9; }
+.annotation { fill: var(--ink); font-size: 27px; letter-spacing: .07em; font-weight: bold; }
+.annotation.small { font-size: 18px; font-weight: normal; letter-spacing: .04em; fill: var(--quiet-ink); }
+.annotation.wait { font-size: 25px; font-style: italic; font-weight: normal; letter-spacing: 0; }
+.annotation-line, .cross-out { fill: none; stroke: var(--ink); stroke-width: 1.7; stroke-linecap: round; }
+.footer { display:flex; justify-content:space-between; padding: 13px 2px 0; color: var(--quiet-ink); font-size: 10px; letter-spacing: .16em; }
+@media (max-width: 760px) { .prototype { width: min(620px, calc(100vw - 24px)); padding: 17px 0 20px; } .footer { font-size: 9px; } .drawing-sheet { box-shadow: 0 10px 24px rgba(66,54,36,.13); } }

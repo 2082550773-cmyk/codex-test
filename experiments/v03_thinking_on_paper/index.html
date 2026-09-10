@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="A continuous researcher-sketch animation of liquid transfer between two hairs." />
+    <title>Thinking on Paper / Animation Prototype v03</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="prototype">
+      <section class="drawing-sheet" aria-label="A continuous animated scientific sketch">
+        <svg id="scene" viewBox="0 0 1600 900" role="img" aria-labelledby="scene-title scene-description">
+          <title id="scene-title">Thinking on paper: two hairs make a liquid bridge and transfer liquid</title>
+          <desc id="scene-description">One continuous hand-drawn diagram keeps two tapered hairs visible while a researcher notices their gap, draws a liquid bridge, and follows liquid to a substrate.</desc>
+          <rect id="paper" width="100%" height="100%" />
+          <g id="surface-layer"></g>
+          <g id="hair-layer"></g>
+          <g id="thinking-layer"></g>
+          <g id="liquid-layer"></g>
+          <g id="annotation-layer"></g>
+        </svg>
+      </section>
+      <footer class="footer" aria-hidden="true"><span>RESEARCH SKETCH / v03</span><span>LOOP 15s</span></footer>
+    </main>
+    <script src="config.js"></script>
+    <script src="timeline.js"></script>
+  </body>
+</html>
