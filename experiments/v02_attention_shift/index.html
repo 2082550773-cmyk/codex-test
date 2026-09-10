@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="A 15-second research-sketch animation about attention shifting between two hairs." />
+    <title>Attention Shift / Animation Prototype v02</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="prototype">
+      <header class="masthead" aria-label="Prototype information">
+        <span>REPRESENTATION SHIFT</span>
+        <span>15s / ANIMATION PROTOTYPE v02</span>
+      </header>
+
+      <section class="drawing-sheet" aria-label="Animated scientific sketch">
+        <svg id="scene" viewBox="0 0 1600 900" role="img" aria-labelledby="scene-title scene-description">
+          <title id="scene-title">Attention shift: two hairs, a gap, a liquid bridge, and transfer</title>
+          <desc id="scene-description">A sparse hand-drawn animation keeps two hairs visible while attention moves to the gap, liquid bridge, and transfer to a surface.</desc>
+          <rect id="paper" width="100%" height="100%" />
+          <g id="hair-layer"></g>
+          <g id="surface-layer"></g>
+          <g id="attention-layer"></g>
+          <g id="liquid-layer"></g>
+          <g id="annotation-layer"></g>
+        </svg>
+      </section>
+
+      <footer class="footer">
+        <span id="stage-label">01 / TWO HAIRS</span>
+        <span>LOOP 15s</span>
+      </footer>
+    </main>
+
+    <script src="config.js"></script>
+    <script src="timeline.js"></script>
+  </body>
+</html>
